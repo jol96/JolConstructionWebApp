@@ -1,5 +1,5 @@
 ﻿using JolConstruction.DataAccess.Repository.IRepository;
-using JolConstruction.Models.Models;
+using JolConstruction.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JolConstructionWebApp.Areas.Admin.Controllers

@@ -1,5 +1,6 @@
 ﻿using JolConstruction.DataAccess.Repository.IRepository;
-using JolConstruction.Models.Models;
+using JolConstruction.Models;
+using JolConstruction.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Net.Http.Headers;
@@ -18,34 +19,51 @@ namespace JolConstructionWebApp.Areas.Admin.Controllers
         public IActionResult Index()
         {
             List<Post> objPostList = _unitOfWork.Post.GetAll().ToList();
+
+            // Set Category based on CategoryId
+            foreach (var post in objPostList) 
+            {
+                var categoryid = post.CategoryId;
+                Category? categoryFromDb = _unitOfWork.Category.Get(c => c.Id == categoryid);
+                post.Category = categoryFromDb;
+            }
+
             return View(objPostList);
         }
 
         public IActionResult Create()
         {
-            IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category
-               .GetAll().Select(u => new SelectListItem
-               {
-                   Text = u.Name,
-                   Value = u.Id.ToString()
-               });
-
-            ViewBag.CategoryList = CategoryList;
-
-            return View();
+            PostVM postVm = new()
+            {
+                CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                }),
+                Post = new Post()
+            };
+            return View(postVm);
         }
 
         [HttpPost]
-        public IActionResult Create(Post obj) 
+        public IActionResult Create(PostVM postVm) 
         {
             if(ModelState.IsValid)
             {
-                _unitOfWork.Post.Add(obj);
+                _unitOfWork.Post.Add(postVm.Post);
                 _unitOfWork.Save();
                 TempData["success"] = "Product created successfully";
                 return RedirectToAction("Index");
             }
-            return View();
+            else
+            {
+                postVm.CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                });
+                return View(postVm);
+            }
         }
 
         public IActionResult Edit(int? id)

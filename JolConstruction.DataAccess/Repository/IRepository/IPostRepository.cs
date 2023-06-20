@@ -1,4 +1,4 @@
-﻿using JolConstruction.Models.Models;
+﻿using JolConstruction.Models;
 
 namespace JolConstruction.DataAccess.Repository.IRepository
 {

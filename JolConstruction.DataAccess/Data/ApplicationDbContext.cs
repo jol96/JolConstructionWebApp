@@ -1,4 +1,4 @@
-﻿using JolConstruction.Models.Models;
+﻿using JolConstruction.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace JolConstruction.Data

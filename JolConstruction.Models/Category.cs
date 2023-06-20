@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace JolConstruction.Models.Models
+namespace JolConstruction.Models
 {
     public class Category
     {

@@ -1,4 +1,4 @@
-﻿@model Post
+﻿@model PostVM
 
 <div class="card shadow border-0 my-4">
     <div class="card-header bg-secondary bg-gradient ml-0 py-3">
@@ -13,22 +13,27 @@
             <div class="border p-3">
                 @*<div asp-validation-summary="ModelOnly"></div>*@
                 <div class="form-floating py-2 col-12">
-                    <select asp-for="CategoryId" asp-items="ViewBag.CategoryList" class="form-select border-0 shadow">
+                    <select asp-for="@Model.Post.CategoryId" asp-items="@Model.CategoryList" class="form-select border-0 shadow">
                         <option disabled selected>--Select Category--</option>
                     </select>
-                    <label asp-for="CategoryId" class="ms-2"></label>
-                    <span asp-validation-for="CategoryId" class="text-danger"></span>
+                    <label asp-for="Post.CategoryId" class="ms-2"></label>
+                    <span asp-validation-for="Post.CategoryId" class="text-danger"></span>
                 </div>
                 <div class="form-floating py-2 col-12">
-                    <input asp-for="Title" class="form-control border-0 shadow" />
-                    <label asp-for="Title" class="ms-2"></label>
-                    <span asp-validation-for="Title" class="text-danger"></span>
+                    <input asp-for="Post.Title" class="form-control border-0 shadow" />
+                    <label asp-for="Post.Title" class="ms-2"></label>
+                    <span asp-validation-for="Post.Title" class="text-danger"></span>
                 </div>
                 <div class="form-floating py-2 col-12">
-                    <input asp-for="Description" class="form-control border-0 shadow" />
-                    <label asp-for="Description" class="ms-2"></label>
-                    <span asp-validation-for="Description" class="text-danger"></span>
-                </div>         
+                    <input asp-for="Post.Description" class="form-control border-0 shadow" />
+                    <label asp-for="Post.Description" class="ms-2"></label>
+                    <span asp-validation-for="Post.Description" class="text-danger"></span>
+                </div>  
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Post.ImageUrl" class="form-control border-0 shadow" />
+                    <label asp-for="Post.ImageUrl" class="ms-2"></label>
+                    <span asp-validation-for="Post.ImageUrl" class="text-danger"></span>
+                </div>
                 <div class="row pt-2">
                     <div class="col-6 col-md-3">
                         <button type="submit" class="btn btn-primary form-control">Create</button>

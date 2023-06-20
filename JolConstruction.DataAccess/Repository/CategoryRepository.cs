@@ -1,6 +1,6 @@
 ﻿using JolConstruction.Data;
 using JolConstruction.DataAccess.Repository.IRepository;
-using JolConstruction.Models.Models;
+using JolConstruction.Models;
 
 namespace JolConstruction.DataAccess.Repository
 {
