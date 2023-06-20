@@ -1,6 +1,7 @@
 ﻿using JolConstruction.DataAccess.Repository.IRepository;
 using JolConstruction.Models.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Net.Http.Headers;
 
 namespace JolConstructionWebApp.Areas.Admin.Controllers
@@ -22,6 +23,15 @@ namespace JolConstructionWebApp.Areas.Admin.Controllers
 
         public IActionResult Create()
         {
+            IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category
+               .GetAll().Select(u => new SelectListItem
+               {
+                   Text = u.Name,
+                   Value = u.Id.ToString()
+               });
+
+            ViewBag.CategoryList = CategoryList;
+
             return View();
         }
 

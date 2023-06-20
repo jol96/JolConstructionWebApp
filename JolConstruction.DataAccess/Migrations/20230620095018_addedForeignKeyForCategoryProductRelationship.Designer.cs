@@ -3,6 +3,7 @@ using JolConstruction.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JolConstructionWebApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230620095018_addedForeignKeyForCategoryProductRelationship")]
+    partial class addedForeignKeyForCategoryProductRelationship
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -77,10 +80,6 @@ namespace JolConstructionWebApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -97,7 +96,6 @@ namespace JolConstructionWebApp.Migrations
                             Id = 1,
                             CategoryId = 2,
                             Description = "Here we have done some external framing",
-                            ImageUrl = "",
                             Title = "Timber Framing"
                         },
                         new
@@ -105,7 +103,6 @@ namespace JolConstructionWebApp.Migrations
                             Id = 2,
                             CategoryId = 1,
                             Description = "Here we have a trussed roof",
-                            ImageUrl = "",
                             Title = "Trussed Roof"
                         });
                 });

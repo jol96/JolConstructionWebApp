@@ -21,8 +21,21 @@ namespace JolConstruction.Data
                 new Category { Id = 3, Name = "Renovations", DisplayOrder = 3 });
 
             modelBuilder.Entity<Post>().HasData(
-                new Post { Id = 1, Title = "Timber Framing", Description = "Here we have done some external framing" }
-                ); ;
+                new Post { 
+                    Id = 1, 
+                    Title = "Timber Framing", 
+                    Description = "Here we have done some external framing",
+                    CategoryId = 2,
+                    ImageUrl = ""
+                },
+                new Post
+                {
+                    Id = 2,
+                    Title = "Trussed Roof",
+                    Description = "Here we have a trussed roof",
+                    CategoryId = 1,
+                    ImageUrl = ""
+                });
         }
     }
 }
