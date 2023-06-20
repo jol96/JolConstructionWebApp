@@ -20,15 +20,15 @@ namespace JolConstructionWebApp.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            List<Post> objPostList = _unitOfWork.Post.GetAll().ToList();
+            List<Post> objPostList = _unitOfWork.Post.GetAll(includeProperties: "Category").ToList();
 
             // Set Category based on CategoryId
-            foreach (var post in objPostList) 
-            {
-                var categoryid = post.CategoryId;
-                Category? categoryFromDb = _unitOfWork.Category.Get(c => c.Id == categoryid);
-                post.Category = categoryFromDb;
-            }
+            //foreach (var post in objPostList) 
+            //{
+            //    var categoryid = post.CategoryId;
+            //    Category? categoryFromDb = _unitOfWork.Category.Get(c => c.Id == categoryid);
+            //    post.Category = categoryFromDb;
+            //}
 
             return View(objPostList);
         }
