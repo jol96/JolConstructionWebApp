@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\images\\post\\a93d2456-4298-4638-b9cc-c277fc6cd38c.png",
+      "PackagePath": "staticwebassets\\images\\post\\a93d2456-4298-4638-b9cc-c277fc6cd38c.png"
+    },
+    {
       "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

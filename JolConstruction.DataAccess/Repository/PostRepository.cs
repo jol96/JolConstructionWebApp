@@ -14,7 +14,17 @@ namespace JolConstruction.DataAccess.Repository
 
         public void Update(Post obj)
         {
-            _db.Posts.Update(obj);
+            var objFromDb = _db.Posts.FirstOrDefault(u => u.Id == obj.Id);
+            if (objFromDb != null)
+            {
+                objFromDb.Title = obj.Title;
+                objFromDb.Description = obj.Description;
+                objFromDb.CategoryId = obj.CategoryId;
+                if (obj.ImageUrl != null)
+                {
+                    objFromDb.ImageUrl = obj.ImageUrl;
+                }
+            }
         }
     }
 }

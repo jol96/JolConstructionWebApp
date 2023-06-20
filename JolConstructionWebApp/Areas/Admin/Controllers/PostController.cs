@@ -67,16 +67,36 @@ namespace JolConstructionWebApp.Areas.Admin.Controllers
                 if(file != null)
                 {
                     string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-                    string postPath = Path.Combine(wwwRootPath, @"images\post");
+                    string postPath = Path.Combine(wwwRootPath, @"images/post");
+
+                    if (!string.IsNullOrEmpty(postVm.Post.ImageUrl))
+                    {
+                        //delete the old image
+                        var oldImagePath =
+                            Path.Combine(wwwRootPath, postVm.Post.ImageUrl.TrimStart('\\'));
+
+                        if (System.IO.File.Exists(oldImagePath))
+                        {
+                            System.IO.File.Delete(oldImagePath);
+                        }
+                    }
 
                     using (var fileStream = new FileStream(Path.Combine(postPath, fileName), FileMode.Create))
                     {
                         file.CopyTo(fileStream);
                     }
-                    postVm.Post.ImageUrl = @"images\post\" + fileName;
+                    postVm.Post.ImageUrl = @"images/post/" + fileName;
                 }
 
-                _unitOfWork.Post.Add(postVm.Post);
+                if (postVm.Post.Id == 0)
+                {
+                    _unitOfWork.Post.Add(postVm.Post);
+                }
+                else
+                {
+                    _unitOfWork.Post.Update(postVm.Post);
+                }
+
                 _unitOfWork.Save();
                 TempData["success"] = "Post created successfully";
                 return RedirectToAction("Index");
