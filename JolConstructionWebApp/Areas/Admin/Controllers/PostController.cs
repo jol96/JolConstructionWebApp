@@ -11,9 +11,11 @@ namespace JolConstructionWebApp.Areas.Admin.Controllers
     public class PostController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
-        public PostController(IUnitOfWork unitOfWork)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public PostController(IUnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment)
         {
             _unitOfWork = unitOfWork;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         public IActionResult Index()
@@ -31,7 +33,8 @@ namespace JolConstructionWebApp.Areas.Admin.Controllers
             return View(objPostList);
         }
 
-        public IActionResult Create()
+
+        public IActionResult Upsert(int? id)
         {
             PostVM postVm = new()
             {
@@ -42,17 +45,40 @@ namespace JolConstructionWebApp.Areas.Admin.Controllers
                 }),
                 Post = new Post()
             };
-            return View(postVm);
-        }
-
-        [HttpPost]
-        public IActionResult Create(PostVM postVm) 
-        {
-            if(ModelState.IsValid)
+            if (id == null || id == 0)
             {
+                //create
+                return View(postVm);
+            }
+            else
+            {
+                //update
+                postVm.Post = _unitOfWork.Post.Get(u => u.Id == id);
+                return View(postVm);
+            }
+
+        }
+        [HttpPost]
+        public IActionResult Upsert(PostVM postVm, IFormFile? file)
+        {
+            if (ModelState.IsValid)
+            {
+                string wwwRootPath = _webHostEnvironment.WebRootPath;
+                if(file != null)
+                {
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                    string postPath = Path.Combine(wwwRootPath, @"images\post");
+
+                    using (var fileStream = new FileStream(Path.Combine(postPath, fileName), FileMode.Create))
+                    {
+                        file.CopyTo(fileStream);
+                    }
+                    postVm.Post.ImageUrl = @"images\post\" + fileName;
+                }
+
                 _unitOfWork.Post.Add(postVm.Post);
                 _unitOfWork.Save();
-                TempData["success"] = "Product created successfully";
+                TempData["success"] = "Post created successfully";
                 return RedirectToAction("Index");
             }
             else
@@ -64,35 +90,6 @@ namespace JolConstructionWebApp.Areas.Admin.Controllers
                 });
                 return View(postVm);
             }
-        }
-
-        public IActionResult Edit(int? id)
-        {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
-            Post? postFromDb = _unitOfWork.Post.Get(u => u.Id == id);
-
-            if (postFromDb == null)
-            {
-                return NotFound();
-            }
-            return View(postFromDb);
-        }
-
-        [HttpPost]
-        public IActionResult Edit(Post obj)
-        {
-            if (ModelState.IsValid)
-            {
-                _unitOfWork.Post.Update(obj);
-                _unitOfWork.Save();
-                TempData["success"] = "Post updated successfully";
-                return RedirectToAction("Index");
-            }
-            return View();
-
         }
 
         public IActionResult Delete(int? id)
@@ -123,5 +120,70 @@ namespace JolConstructionWebApp.Areas.Admin.Controllers
             TempData["success"] = "Post deleted successfully";
             return RedirectToAction("Index");
         }
+
+
+        //public IActionResult Create()
+        //{
+        //    PostVM postVm = new()
+        //    {
+        //        CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+        //        {
+        //            Text = u.Name,
+        //            Value = u.Id.ToString()
+        //        }),
+        //        Post = new Post()
+        //    };
+        //    return View(postVm);
+        //}
+
+        //[HttpPost]
+        //public IActionResult Create(PostVM postVm) 
+        //{
+        //    if(ModelState.IsValid)
+        //    {
+        //        _unitOfWork.Post.Add(postVm.Post);
+        //        _unitOfWork.Save();
+        //        TempData["success"] = "Post created successfully";
+        //        return RedirectToAction("Index");
+        //    }
+        //    else
+        //    {
+        //        postVm.CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+        //        {
+        //            Text = u.Name,
+        //            Value = u.Id.ToString()
+        //        });
+        //        return View(postVm);
+        //    }
+        //}
+
+        //public IActionResult Edit(int? id)
+        //{
+        //    if (id == null || id == 0)
+        //    {
+        //        return NotFound();
+        //    }
+        //    Post? postFromDb = _unitOfWork.Post.Get(u => u.Id == id);
+
+        //    if (postFromDb == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return View(postFromDb);
+        //}
+
+        //[HttpPost]
+        //public IActionResult Edit(Post obj)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        _unitOfWork.Post.Update(obj);
+        //        _unitOfWork.Save();
+        //        TempData["success"] = "Post updated successfully";
+        //        return RedirectToAction("Index");
+        //    }
+        //    return View();
+
+        //}
     }
 }
