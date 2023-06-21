@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vjsfCOE3O4YqCD7RsGJXg9BINVTuD/XGC/bteUhPjQU=",
+  "Hash": "4F2AAS9ZdJw0vHOGOT+/5VAhFz3GT/K43vvD72n1YcU=",
   "Source": "JolConstructionWebApp",
   "BasePath": "_content/JolConstructionWebApp",
   "Mode": "Default",
@@ -85,12 +85,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\images\\post\\532ac081-ac77-4a00-a98a-f342246e0e9f.jpg",
+      "Identity": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\images\\post\\e05440da-b60a-418a-8df8-2501fce94a9d.jpg",
       "SourceId": "JolConstructionWebApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\",
       "BasePath": "_content/JolConstructionWebApp",
-      "RelativePath": "images/post/532ac081-ac77-4a00-a98a-f342246e0e9f.jpg",
+      "RelativePath": "images/post/e05440da-b60a-418a-8df8-2501fce94a9d.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -99,15 +99,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\532ac081-ac77-4a00-a98a-f342246e0e9f.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\post\\e05440da-b60a-418a-8df8-2501fce94a9d.jpg"
     },
     {
-      "Identity": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\images\\post\\a93d2456-4298-4638-b9cc-c277fc6cd38c.png",
+      "Identity": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\js\\post.js",
       "SourceId": "JolConstructionWebApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\",
       "BasePath": "_content/JolConstructionWebApp",
-      "RelativePath": "images/post/a93d2456-4298-4638-b9cc-c277fc6cd38c.png",
+      "RelativePath": "js/post.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,7 +116,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\post\\a93d2456-4298-4638-b9cc-c277fc6cd38c.png"
+      "OriginalItemSpec": "wwwroot\\js\\post.js"
     },
     {
       "Identity": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\js\\site.js",

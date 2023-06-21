@@ -142,68 +142,13 @@ namespace JolConstructionWebApp.Areas.Admin.Controllers
         }
 
 
-        //public IActionResult Create()
-        //{
-        //    PostVM postVm = new()
-        //    {
-        //        CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
-        //        {
-        //            Text = u.Name,
-        //            Value = u.Id.ToString()
-        //        }),
-        //        Post = new Post()
-        //    };
-        //    return View(postVm);
-        //}
-
-        //[HttpPost]
-        //public IActionResult Create(PostVM postVm) 
-        //{
-        //    if(ModelState.IsValid)
-        //    {
-        //        _unitOfWork.Post.Add(postVm.Post);
-        //        _unitOfWork.Save();
-        //        TempData["success"] = "Post created successfully";
-        //        return RedirectToAction("Index");
-        //    }
-        //    else
-        //    {
-        //        postVm.CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
-        //        {
-        //            Text = u.Name,
-        //            Value = u.Id.ToString()
-        //        });
-        //        return View(postVm);
-        //    }
-        //}
-
-        //public IActionResult Edit(int? id)
-        //{
-        //    if (id == null || id == 0)
-        //    {
-        //        return NotFound();
-        //    }
-        //    Post? postFromDb = _unitOfWork.Post.Get(u => u.Id == id);
-
-        //    if (postFromDb == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    return View(postFromDb);
-        //}
-
-        //[HttpPost]
-        //public IActionResult Edit(Post obj)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        _unitOfWork.Post.Update(obj);
-        //        _unitOfWork.Save();
-        //        TempData["success"] = "Post updated successfully";
-        //        return RedirectToAction("Index");
-        //    }
-        //    return View();
-
-        //}
+        #region API Calls
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            List<Post> objPostList = _unitOfWork.Post.GetAll(includeProperties: "Category").ToList();
+            return Json(new { data = objPostList });
+        }
+        #endregion
     }
 }

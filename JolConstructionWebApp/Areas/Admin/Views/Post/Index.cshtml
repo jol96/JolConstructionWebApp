@@ -18,13 +18,14 @@
                     </a>
                 </div>
             </div>
-
-            <table class="table table-bordered table-striped">
+            @*<table id="tblData" class="table table-bordered table-striped" style="width:100%">*@
+            <table class="table table-bordered table-striped" style="width:100%">
                 <thead>
                     <tr>
                         <th>Title</th>
                         <th>Description</th>
                         <th>Category</th>
+                        <th>Image</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -37,6 +38,9 @@
                             </td>
                             <td>
                                 @obj.Category.Name
+                            </td>
+                            <td class="col-2">
+                                <img src="~/@obj.ImageUrl" width="100%" height="100%" style="border-radius:5px; border:1px solid #bbb9b9" />
                             </td>
                             <td>
                                 <div class="w-75 btn-group" role="group">
@@ -52,6 +56,10 @@
                     }
                 </tbody>
             </table>
-
         </div>
     </div>
+
+
+@*@section Scripts{
+    <script src="~/js/post.js"></script>
+}*@
