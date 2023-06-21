@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zlrLTNNEIsuNnVklpVqWJK5NqRbYqZA5u2daDU+Xz8G5NwSzDaF3THqpqNwM7UVE94fsqEd15TqVuCjKRtXclw==",
+  "dgSpecHash": "gSNcmhDF8g10dkjzKarDb1UDKOv/BN8nQSfX1VvBlIIVLQ2vDjkIU0en7uP6/9IBiNWGpPKIJMTHHHRb8e1iLg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\JolConstructionWebApp.csproj",
+  "projectFilePath": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\JolConstructionWebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jack\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Jack\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

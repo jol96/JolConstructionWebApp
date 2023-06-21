@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EwA+GYggEWQQdcEti6jgMJMCCjWmbv4Q1wJriRfcIX/BuArRqlcCl+hwCa8t1gQHAFEQWPkw6RigvlYMtldZag==",
+  "dgSpecHash": "m9qiqN6eCH+z2CE4F6kxmx04crX5plKn4Z/E7FsOwAQzU5G6zT3DNYua83Vvcup53mzlLuIlKUuOZbNsXuMnnA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstruction.Models\\JolConstruction.Models.csproj",
+  "projectFilePath": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstruction.Models\\JolConstruction.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jack\\.nuget\\packages\\microsoft.aspnet.mvc\\5.2.9\\microsoft.aspnet.mvc.5.2.9.nupkg.sha512",
     "C:\\Users\\Jack\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.9\\microsoft.aspnet.razor.3.2.9.nupkg.sha512",

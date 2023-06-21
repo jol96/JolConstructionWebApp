@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstruction.Utility\\JolConstruction.Utility.csproj": {}
+    "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstruction.Utility\\JolConstruction.Utility.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstruction.Utility\\JolConstruction.Utility.csproj": {
+    "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstruction.Utility\\JolConstruction.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstruction.Utility\\JolConstruction.Utility.csproj",
+        "projectUniqueName": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstruction.Utility\\JolConstruction.Utility.csproj",
         "projectName": "JolConstruction.Utility",
-        "projectPath": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstruction.Utility\\JolConstruction.Utility.csproj",
+        "projectPath": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstruction.Utility\\JolConstruction.Utility.csproj",
         "packagesPath": "C:\\Users\\Jack\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstruction.Utility\\obj\\",
+        "outputPath": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstruction.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
