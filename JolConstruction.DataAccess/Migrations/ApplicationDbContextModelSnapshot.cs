@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace JolConstructionWebApp.Migrations
+namespace JolConstruction.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -21,7 +21,7 @@ namespace JolConstructionWebApp.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("JolConstruction.Models.Models.Category", b =>
+            modelBuilder.Entity("JolConstruction.Models.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -46,23 +46,17 @@ namespace JolConstructionWebApp.Migrations
                         {
                             Id = 1,
                             DisplayOrder = 1,
-                            Name = "Roofing"
+                            Name = "Cover Photo"
                         },
                         new
                         {
                             Id = 2,
                             DisplayOrder = 2,
-                            Name = "Extensions"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            DisplayOrder = 3,
-                            Name = "Renovations"
+                            Name = "Home Page Project"
                         });
                 });
 
-            modelBuilder.Entity("JolConstruction.Models.Models.Post", b =>
+            modelBuilder.Entity("JolConstruction.Models.Post", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -95,24 +89,24 @@ namespace JolConstructionWebApp.Migrations
                         new
                         {
                             Id = 1,
-                            CategoryId = 2,
-                            Description = "Here we have done some external framing",
+                            CategoryId = 1,
+                            Description = "Cover Photo",
                             ImageUrl = "",
-                            Title = "Timber Framing"
+                            Title = "Cover Photo"
                         },
                         new
                         {
                             Id = 2,
-                            CategoryId = 1,
-                            Description = "Here we have a trussed roof",
+                            CategoryId = 2,
+                            Description = "A new build project completed in 2022",
                             ImageUrl = "",
-                            Title = "Trussed Roof"
+                            Title = "New Build"
                         });
                 });
 
-            modelBuilder.Entity("JolConstruction.Models.Models.Post", b =>
+            modelBuilder.Entity("JolConstruction.Models.Post", b =>
                 {
-                    b.HasOne("JolConstruction.Models.Models.Category", "Category")
+                    b.HasOne("JolConstruction.Models.Category", "Category")
                         .WithMany()
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)

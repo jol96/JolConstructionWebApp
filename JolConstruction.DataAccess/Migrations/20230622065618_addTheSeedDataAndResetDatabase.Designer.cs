@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace JolConstructionWebApp.Migrations
+namespace JolConstruction.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230620082230_addedPostTableAndSeededData")]
-    partial class addedPostTableAndSeededData
+    [Migration("20230622065618_addTheSeedDataAndResetDatabase")]
+    partial class addTheSeedDataAndResetDatabase
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,7 +24,7 @@ namespace JolConstructionWebApp.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("JolConstruction.Models.Models.Category", b =>
+            modelBuilder.Entity("JolConstruction.Models.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -49,23 +49,17 @@ namespace JolConstructionWebApp.Migrations
                         {
                             Id = 1,
                             DisplayOrder = 1,
-                            Name = "Roofing"
+                            Name = "Cover Photo"
                         },
                         new
                         {
                             Id = 2,
                             DisplayOrder = 2,
-                            Name = "Extensions"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            DisplayOrder = 3,
-                            Name = "Renovations"
+                            Name = "Home Page Project"
                         });
                 });
 
-            modelBuilder.Entity("JolConstruction.Models.Models.Post", b =>
+            modelBuilder.Entity("JolConstruction.Models.Post", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -73,7 +67,14 @@ namespace JolConstructionWebApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -83,15 +84,38 @@ namespace JolConstructionWebApp.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CategoryId");
+
                     b.ToTable("Posts");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            Description = "Here we have done some external framing",
-                            Title = "Timber Framing"
+                            CategoryId = 1,
+                            Description = "Cover Photo",
+                            ImageUrl = "",
+                            Title = "Cover Photo"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CategoryId = 2,
+                            Description = "A new build project completed in 2022",
+                            ImageUrl = "",
+                            Title = "New Build"
                         });
+                });
+
+            modelBuilder.Entity("JolConstruction.Models.Post", b =>
+                {
+                    b.HasOne("JolConstruction.Models.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 #pragma warning restore 612, 618
         }

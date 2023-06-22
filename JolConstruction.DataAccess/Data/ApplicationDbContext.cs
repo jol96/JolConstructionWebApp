@@ -16,24 +16,23 @@ namespace JolConstruction.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>().HasData(
-                new Category { Id = 1, Name = "Roofing", DisplayOrder = 1},
-                new Category { Id = 2, Name = "Extensions", DisplayOrder = 2 },
-                new Category { Id = 3, Name = "Renovations", DisplayOrder = 3 });
+                new Category { Id = 1, Name = "Cover Photo", DisplayOrder = 1},
+                new Category { Id = 2, Name = "Home Page Project", DisplayOrder = 2 });
 
             modelBuilder.Entity<Post>().HasData(
                 new Post { 
                     Id = 1, 
-                    Title = "Timber Framing", 
-                    Description = "Here we have done some external framing",
-                    CategoryId = 2,
+                    Title = "Cover Photo", 
+                    Description = "Cover Photo",
+                    CategoryId = 1,
                     ImageUrl = ""
                 },
                 new Post
                 {
                     Id = 2,
-                    Title = "Trussed Roof",
-                    Description = "Here we have a trussed roof",
-                    CategoryId = 1,
+                    Title = "New Build",
+                    Description = "A new build project completed in 2022",
+                    CategoryId = 2,
                     ImageUrl = ""
                 });
         }

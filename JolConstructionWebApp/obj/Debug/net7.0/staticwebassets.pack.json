@@ -1,255 +1,283 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\JolConstructionWebApp.bundle.scp.css",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\JolConstructionWebApp.bundle.scp.css",
       "PackagePath": "staticwebassets\\JolConstructionWebApp.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\css\\homeIndex.css",
+      "PackagePath": "staticwebassets\\css\\homeIndex.css"
+    },
+    {
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\images\\post\\e05440da-b60a-418a-8df8-2501fce94a9d.jpg",
-      "PackagePath": "staticwebassets\\images\\post\\e05440da-b60a-418a-8df8-2501fce94a9d.jpg"
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\images\\post\\2c933a4d-26bc-4158-bb68-f6a55890987f.jpg",
+      "PackagePath": "staticwebassets\\images\\post\\2c933a4d-26bc-4158-bb68-f6a55890987f.jpg"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\js\\post.js",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\images\\post\\2eef3a3f-0275-448f-813f-e63d58ddf8db.jpeg",
+      "PackagePath": "staticwebassets\\images\\post\\2eef3a3f-0275-448f-813f-e63d58ddf8db.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\images\\post\\30816d65-af3b-4d31-8c05-3e80be421d55.jpg",
+      "PackagePath": "staticwebassets\\images\\post\\30816d65-af3b-4d31-8c05-3e80be421d55.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\images\\post\\7120cbb8-0212-4c0b-bdb4-3cf575cfc4b1.jpg",
+      "PackagePath": "staticwebassets\\images\\post\\7120cbb8-0212-4c0b-bdb4-3cf575cfc4b1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\images\\post\\906cd79d-42ae-4ace-a266-5f2dc4029268.jpeg",
+      "PackagePath": "staticwebassets\\images\\post\\906cd79d-42ae-4ace-a266-5f2dc4029268.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\images\\post\\b89e0d34-f304-411e-86a6-df761a459d3d.png",
+      "PackagePath": "staticwebassets\\images\\post\\b89e0d34-f304-411e-86a6-df761a459d3d.png"
+    },
+    {
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\images\\post\\cdfca147-4686-4240-b41f-5ab2a31fc916.jpeg",
+      "PackagePath": "staticwebassets\\images\\post\\cdfca147-4686-4240-b41f-5ab2a31fc916.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\js\\post.js",
       "PackagePath": "staticwebassets\\js\\post.js"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Jack\\workspace\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Jack\\workspace\\Websites\\JolConstructionWebApp\\JolConstructionWebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

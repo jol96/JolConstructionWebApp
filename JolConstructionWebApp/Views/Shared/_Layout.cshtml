@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="//cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.8/css/all.css">
 </head>
 <body>
     <header>
@@ -45,16 +46,17 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div>
         <main role="main" class="pb-3">
             <partial name="_Notification" />
             @RenderBody()
+            @RenderSection("Styles", false)
         </main>
     </div>
 
     <footer class="border-top footer text-muted bg-dark">
-        <div class="container">
-            &copy; 2023 - John O'Loughlin Construction - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <div class="text-center">
+            Made with <i class="bi bi-heart-fill"></i> by Jack
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
