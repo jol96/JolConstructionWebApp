@@ -53,41 +53,19 @@ namespace JolConstructionWebApp.Areas.Admin.Controllers
             else
             {
                 //update
-                postVm.Post = _unitOfWork.Post.Get(u => u.Id == id);
+                postVm.Post = _unitOfWork.Post.Get(u => u.Id == id, includeProperties:"PostImages");
                 return View(postVm);
             }
 
         }
+
+        
+
         [HttpPost]
-        public IActionResult Upsert(PostVM postVm, IFormFile? file)
+        public IActionResult Upsert(PostVM postVm, List<IFormFile> files)
         {
             if (ModelState.IsValid)
             {
-                string wwwRootPath = _webHostEnvironment.WebRootPath;
-                if(file != null)
-                {
-                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-                    string postPath = Path.Combine(wwwRootPath, @"images/post");
-
-                    if (!string.IsNullOrEmpty(postVm.Post.ImageUrl))
-                    {
-                        //delete the old image
-                        var oldImagePath =
-                            Path.Combine(wwwRootPath, postVm.Post.ImageUrl.TrimStart('\\'));
-
-                        if (System.IO.File.Exists(oldImagePath))
-                        {
-                            System.IO.File.Delete(oldImagePath);
-                        }
-                    }
-
-                    using (var fileStream = new FileStream(Path.Combine(postPath, fileName), FileMode.Create))
-                    {
-                        file.CopyTo(fileStream);
-                    }
-                    postVm.Post.ImageUrl = @"images/post/" + fileName;
-                }
-
                 if (postVm.Post.Id == 0)
                 {
                     _unitOfWork.Post.Add(postVm.Post);
@@ -98,7 +76,44 @@ namespace JolConstructionWebApp.Areas.Admin.Controllers
                 }
 
                 _unitOfWork.Save();
-                TempData["success"] = "Post created successfully";
+
+
+                string wwwRootPath = _webHostEnvironment.WebRootPath;
+                if (files != null)
+                {
+
+                    foreach (IFormFile file in files)
+                    {
+                        string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                        string postPath = @"images\posts\post-" + postVm.Post.Id;
+                        string finalPath = Path.Combine(wwwRootPath, postPath);
+
+                        if (!Directory.Exists(finalPath))
+                            Directory.CreateDirectory(finalPath);
+
+                        using (var fileStream = new FileStream(Path.Combine(finalPath, fileName), FileMode.Create))
+                        {
+                            file.CopyTo(fileStream);
+                        }
+
+                        PostImage postImage = new()
+                        {
+                            ImageUrl = @"\" + postPath + @"\" + fileName,
+                            PostId = postVm.Post.Id,
+                        };
+
+                        if (postVm.Post.PostImages == null)
+                            postVm.Post.PostImages = new List<PostImage>();
+
+                        postVm.Post.PostImages.Add(postImage);
+
+                    }
+
+                    _unitOfWork.Post.Update(postVm.Post);
+                    _unitOfWork.Save();
+                }
+
+                TempData["success"] = "Post created/updated successfully";
                 return RedirectToAction("Index");
             }
             else
@@ -135,12 +150,46 @@ namespace JolConstructionWebApp.Areas.Admin.Controllers
             {
                 return NotFound();
             }
+
+            string postPath = @"images\posts\post-" + id;
+            string finalPath = Path.Combine(_webHostEnvironment.WebRootPath, postPath);
+
+            if (Directory.Exists(finalPath))
+            {
+                string[] filePaths = Directory.GetFiles(finalPath);
+                foreach(string filePath in filePaths)
+                {
+                    System.IO.File.Delete(filePath);
+                }
+                Directory.Delete(finalPath);
+            }
+                
             _unitOfWork.Post.Remove(obj);
             _unitOfWork.Save();
             TempData["success"] = "Post deleted successfully";
             return RedirectToAction("Index");
         }
 
+        public IActionResult DeleteImage(int imageId) 
+        {
+            var imageToBeDeleted = _unitOfWork.PostImage.Get(i => i.Id == imageId);
+            var postId = imageToBeDeleted.PostId;
+            if(imageToBeDeleted != null)
+            {
+                if(!string.IsNullOrEmpty(imageToBeDeleted.ImageUrl))
+                {
+                    var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, imageToBeDeleted.ImageUrl.TrimStart('/'));
+                    if(System.IO.File.Exists(oldImagePath))
+                    {
+                        System.IO.File.Delete(oldImagePath);
+                    }
+                }
+                _unitOfWork.PostImage.Remove(imageToBeDeleted);
+                _unitOfWork.Save();
+                TempData["success"] = "Deleted successfully";
+            }
+            return RedirectToAction(nameof(Upsert), new {id = postId});
+        }
 
         #region API Calls
         [HttpGet]

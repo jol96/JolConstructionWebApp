@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Post>
+@section Styles {
+    <link href="@Url.Content("~/css/customerLayout.css")" rel="stylesheet" type="text/css" />
+}
+
+@{
+    var servicesPosts = Model.Where
+        (p => p.Category.Name != null && string.Equals(p.Category.Name, "Services", StringComparison.OrdinalIgnoreCase));
+}
+
+<div class="container pb-1 pt-1 mb-2 mt-2">
+    <div class="d-flex justify-content-center align-items-center">
+        <div type="button" class="btn-group" role="group">
+            <a asp-controller="Services" asp-action="Index" asp-route-filterServices="All" class="btn btn-sm btn-light mx-0">
+                All
+            </a>
+        </div>
+        <div type="button" class="btn-group" role="group">
+            <a asp-controller="Services" asp-action="Index" asp-route-filterServices="Roofing" class="btn btn-sm btn-light mx-0">
+                Roofing
+            </a>
+        </div>
+        <div type="button" class="btn-group" role="group">
+            <a asp-controller="Services" asp-action="Index" asp-route-filterServices="Timber Framing" class="btn btn-sm btn-light mx-0">
+                Timber Framing
+            </a>
+        </div>
+        <div type="button" class="btn-group" role="group">
+            <a asp-controller="Services" asp-action="Index" asp-route-filterServices="Extensions" class="btn btn-sm btn-light mx-0">
+                Extensions
+            </a>
+        </div>
+        <div type="button" class="btn-group" role="group">
+            <a asp-controller="Services" asp-action="Index" asp-route-filterServices="Garden Room" class="btn btn-sm btn-light mx-0">
+                Garden Rooms
+            </a>
+        </div>
+        <div type="button" class="btn-group" role="group">
+            <a asp-controller="Services" asp-action="Index" asp-route-filterServices="Patio" class="btn btn-sm btn-light mx-0">
+                Patios
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container pb-5 pt-1 mb-2 mt-2">
+    <div class="row justify-content-center">
+        @foreach (var post in servicesPosts)
+        {
+            foreach (var image in post.PostImages)
+            {
+                <div class="col-lg-3 col-sm-6">
+                    <div class="row p-2">
+                        <div class="col-12 p-1">
+                            <div class="card border-0">
+                                <img src="@image.ImageUrl" class="d-block w-100" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+

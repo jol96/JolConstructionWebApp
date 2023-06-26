@@ -7,7 +7,7 @@
 namespace JolConstruction.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class addTheSeedDataAndResetDatabase : Migration
+    public partial class addedPostImages : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -34,8 +34,7 @@ namespace JolConstruction.DataAccess.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CategoryId = table.Column<int>(type: "int", nullable: false),
-                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    CategoryId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -44,6 +43,26 @@ namespace JolConstruction.DataAccess.Migrations
                         name: "FK_Posts_Categorys_CategoryId",
                         column: x => x.CategoryId,
                         principalTable: "Categorys",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "PostImages",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PostId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PostImages", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_PostImages_Posts_PostId",
+                        column: x => x.PostId,
+                        principalTable: "Posts",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -59,12 +78,17 @@ namespace JolConstruction.DataAccess.Migrations
 
             migrationBuilder.InsertData(
                 table: "Posts",
-                columns: new[] { "Id", "CategoryId", "Description", "ImageUrl", "Title" },
+                columns: new[] { "Id", "CategoryId", "Description", "Title" },
                 values: new object[,]
                 {
-                    { 1, 1, "Cover Photo", "", "Cover Photo" },
-                    { 2, 2, "A new build project completed in 2022", "", "New Build" }
+                    { 1, 1, "Cover Photo", "Cover Photo" },
+                    { 2, 2, "A new build project completed in 2022", "New Build" }
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PostImages_PostId",
+                table: "PostImages",
+                column: "PostId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Posts_CategoryId",
@@ -75,6 +99,9 @@ namespace JolConstruction.DataAccess.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "PostImages");
+
             migrationBuilder.DropTable(
                 name: "Posts");
 

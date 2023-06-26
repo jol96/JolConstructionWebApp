@@ -12,6 +12,7 @@ namespace JolConstruction.Data
 
         public DbSet<Category> Categorys { get; set; }
         public DbSet<Post> Posts { get; set; }
+        public DbSet<PostImage> PostImages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -24,16 +25,14 @@ namespace JolConstruction.Data
                     Id = 1, 
                     Title = "Cover Photo", 
                     Description = "Cover Photo",
-                    CategoryId = 1,
-                    ImageUrl = ""
+                    CategoryId = 1
                 },
                 new Post
                 {
                     Id = 2,
                     Title = "New Build",
                     Description = "A new build project completed in 2022",
-                    CategoryId = 2,
-                    ImageUrl = ""
+                    CategoryId = 2
                 });
         }
     }

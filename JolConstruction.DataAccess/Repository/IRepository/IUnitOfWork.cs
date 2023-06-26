@@ -4,6 +4,7 @@
     {
         ICategoryRepository Category { get; }
         IPostRepository Post { get; }
+        IPostImageRepository PostImage { get; }
 
         void Save();
     }

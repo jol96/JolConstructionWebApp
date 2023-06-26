@@ -1,7 +1,6 @@
 ﻿using JolConstruction.DataAccess.Repository.IRepository;
 using JolConstruction.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
 namespace JolConstructionWebApp.Areas.Customer.Controllers
 {
@@ -19,19 +18,8 @@ namespace JolConstructionWebApp.Areas.Customer.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<Post> postList = _unitOfWork.Post.GetAll(includeProperties: "Category");
+            IEnumerable<Post> postList = _unitOfWork.Post.GetAll(includeProperties: "Category,PostImages");
             return View(postList);
-        }
-
-        public IActionResult Details(int postId)
-        {
-            Post post = _unitOfWork.Post.Get(u => u.Id == postId, includeProperties: "Category");
-            return View(post);
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
         }
     }
 }

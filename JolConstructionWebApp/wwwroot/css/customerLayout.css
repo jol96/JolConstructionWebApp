@@ -1,27 +1,20 @@
-﻿/* ------------------------- Start - Home Page Cover photo ---------------------*/
+﻿/* 
+    CSS file that applies to anything in the customer area
+*/
+
+/* ------------------------- Start - Index Page Cover photo ---------------------*/
 .background-image {
     width: 100%; /* or any desired width */
-    height: 1000px; /* or any desired height */
+    height: 500px; /* or any desired height */
     background-position: center center;
     background-size: cover; /* or contain */
     resize: both;
 }
 
-@media (max-width: 1440px) {
-    .background-image {
-        height: 800px
-    }
-}
-
-@media (max-width: 1080px) {
-    .background-image {
-        height: 700px
-    }
-}
 
 @media (max-width: 680px) {
     .background-image {
-        height: 600px
+        height: 300px
     }
 }
 
@@ -30,9 +23,9 @@
         height: 400px
     }
 }
-/* ------------------------- End - Home Page Cover photo ---------------------*/
+/* ------------------------- End - Index Page Cover photo ---------------------*/
 
-/* ------------------------- Start - Home Page Cover photo overlay details ---------------------*/
+/* ------------------------- Start - Index Page Cover photo overlay details ---------------------*/
 h1 {
     color: #f0efe8;
     font-family: 'Trirong', serif;
@@ -93,10 +86,4 @@ h1 {
 }
 
 
-/* ------------------------- End - Home Page Cover photo overlay details ---------------------*/
-
-/* ------------------------- Start - Home Page Recent Projects details ---------------------*/
-.recent-projects-images {
-    width: 310px;
-    height: 310px;
-}
+/* ------------------------- End - Index Page Cover photo overlay details ---------------------*/

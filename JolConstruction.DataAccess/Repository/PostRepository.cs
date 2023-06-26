@@ -20,10 +20,11 @@ namespace JolConstruction.DataAccess.Repository
                 objFromDb.Title = obj.Title;
                 objFromDb.Description = obj.Description;
                 objFromDb.CategoryId = obj.CategoryId;
-                if (obj.ImageUrl != null)
-                {
-                    objFromDb.ImageUrl = obj.ImageUrl;
-                }
+                objFromDb.PostImages = obj.PostImages;
+                //if (obj.ImageUrl != null)
+                //{
+                //    objFromDb.ImageUrl = obj.ImageUrl;
+                //}
             }
         }
     }

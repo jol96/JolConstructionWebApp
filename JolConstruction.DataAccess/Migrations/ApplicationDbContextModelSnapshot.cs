@@ -71,10 +71,6 @@ namespace JolConstruction.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -91,7 +87,6 @@ namespace JolConstruction.DataAccess.Migrations
                             Id = 1,
                             CategoryId = 1,
                             Description = "Cover Photo",
-                            ImageUrl = "",
                             Title = "Cover Photo"
                         },
                         new
@@ -99,9 +94,30 @@ namespace JolConstruction.DataAccess.Migrations
                             Id = 2,
                             CategoryId = 2,
                             Description = "A new build project completed in 2022",
-                            ImageUrl = "",
                             Title = "New Build"
                         });
+                });
+
+            modelBuilder.Entity("JolConstruction.Models.PostImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PostId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PostId");
+
+                    b.ToTable("PostImages");
                 });
 
             modelBuilder.Entity("JolConstruction.Models.Post", b =>
@@ -113,6 +129,22 @@ namespace JolConstruction.DataAccess.Migrations
                         .IsRequired();
 
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("JolConstruction.Models.PostImage", b =>
+                {
+                    b.HasOne("JolConstruction.Models.Post", "Post")
+                        .WithMany("PostImages")
+                        .HasForeignKey("PostId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Post");
+                });
+
+            modelBuilder.Entity("JolConstruction.Models.Post", b =>
+                {
+                    b.Navigation("PostImages");
                 });
 #pragma warning restore 612, 618
         }
