@@ -23,16 +23,15 @@
                 <div class="container-fluid center-screen">
                     <div class="site-title col-lg-4 col-sm-8 ">
                         <h1>John O'Loughlin</h1>
-                        <p class="son">& Son</p>
                         <h1>Construction</h1>
                         <div class="email-contact">
-                            <i class="fa fa-envelope fa-2x" aria-hidden="true">
-                                <a href="mailto:johnsoloughlin.gmail.com" class="phone-and-email">johnsoloughlin@gmail.com</a>
+                            <i class="fa fa-envelope fa-2x" aria-hidden="true" style="color: white;">
+                                <a href="mailto:johnsoloughlin.gmail.com" class="phone-and-email" style="color: white;">johnsoloughlin@gmail.com</a>
                             </i>
                         </div>
                         <div class="phone-contact">
-                            <i class="fa fa-phone-square fa-2x" aria-hidden="true">
-                                <span class="phone-and-email">086 855 4799</span>
+                            <i class="fa fa-phone-square fa-2x" aria-hidden="true" style="color: white;">
+                                <a href="tel:0868554799" class="phone-and-email" style="color: white;">086 855 4799</a>
                             </i>
                         </div>
                     </div>
@@ -40,18 +39,14 @@
             </div>
             <div class="container pb-1 pt-1 mb-2 mt-2">
                 <div class="d-flex justify-content-center align-items-center">
-                    <div type="button" class="btn-group" role="group">
-                        <a asp-controller="Home" asp-action="Index" class="btn btn-lg btn-light mx-0">
+                    <div class="btn-group" role="group">
+                        <a href="@Url.Action("Index", "Home")" class="btn btn-lg btn-light mx-0" data-target="projects" onclick="btnClick()">
                             <i class="bi bi-house-check"></i> Projects
                         </a>
-                    </div>
-                    <div type="button" class="btn-group" role="group">
-                        <a asp-controller="Services" asp-action="Index" class="btn btn-lg btn-light mx-0">
-                            <i class="bi bi-hammer"></i></i> Services
+                        <a href="@Url.Action("Index", "Services")" class="btn btn-lg btn-light mx-0" data-target="services" onclick="btnClick()">
+                            <i class="bi bi-hammer"></i> Services
                         </a>
-                    </div>
-                    <div type="button" class="btn-group" role="group">
-                        <a asp-controller="Home" asp-action="Services" class="btn btn-lg btn-light mx-0">
+                        <a href="@Url.Action("Index", "Contact")" class="btn btn-lg btn-light mx-0" data-target="contact" onclick="btnClick()">
                             <i class="bi bi-telephone"></i> Contact
                         </a>
                     </div>
@@ -62,9 +57,10 @@
         </main>
     </div>
 
-    <footer class="border-top pt-4 pb-4 footer text-muted bg-dark">
+    <footer class="border-top pt-1 pb-1 footer text-muted bg-dark">
         <div class="text-center">
-            <a href="https://johnoloughlinconstruction.ie/">www.johnoloughlinconstruction.ie</a>
+            <i class="bi bi-c-circle"></i>
+            <span class="fs-6">2023 John O'Loughlin Construction Ltd</span>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

@@ -1,0 +1,39 @@
+﻿@section Styles {
+    <link href="@Url.Content("~/css/customerLayout.css")" rel="stylesheet" type="text/css" />
+}
+<div class="d-flex flex-column min-vh-100 container">
+    <div class="row justify-content-center pt-5 pb-5 px-2 ">
+        <div class="col-lg-4 col-md-6 col-sm-12 border border-1">
+            <div class="row pt-2 pb-2">
+                <div class="col-2 center-screen ">
+                    <label for="email" class="form-label">
+                        <i class="bi bi-envelope"></i>
+                    </label>
+                </div>
+                <div class="col-6 center-screen ">
+                    <span id="email">johnsoloughlin@gmail.com</span>
+                </div>
+                <div class="col-4 center-screen ">
+                    <button class="btn btn-outline-secondary" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to Clipboard" onclick="copyToClipboard('email')">
+                        <i class="bi bi-clipboard-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row pt-2 pb-2">
+                <div class="col-2 center-screen ">
+                    <label for="phone" class="form-label">
+                        <i class="bi bi-telephone"></i>
+                    </label>
+                </div>
+                <div class="col-6 center-screen ">
+                    <span id="phone">+353 86 855 4799</span>
+                </div>
+                <div class="col-4 center-screen ">
+                    <button class="btn btn-outline-secondary" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to Clipboard" onclick="copyToClipboard('phone')">
+                        <i class="bi bi-clipboard-check"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

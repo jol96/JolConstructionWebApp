@@ -87,3 +87,15 @@ h1 {
 
 
 /* ------------------------- End - Index Page Cover photo overlay details ---------------------*/
+
+.service-button {
+    background-color:cadetblue;
+}
+
+.service-button.active {
+    border: thin;
+    border-color: antiquewhite;
+}
+
+
+
