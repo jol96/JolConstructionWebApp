@@ -1,10 +1,10 @@
 ﻿@model PostVM
 
-<div class="card shadow border-0 my-4">
-    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+<div class="card shadow border-0">
+    <div class="card-header bg-light bg-gradient ml-0 py-3">
         <div class="row">
             <div class="col-12 text-center">
-                <h2 class="text-white py-2">@(Model.Post.Id != 0 ? "Update" : "Create") Post</h2>
+                <h2 class="text-dark py-2">@(Model.Post.Id != 0 ? "Update" : "Create") Post</h2>
             </div>
         </div>
     </div>
@@ -37,6 +37,21 @@
                             <input type="file" name="files" class="form-control border-0 shadow" multiple />
                             <label asp-for="Post.PostImages" class="ms-2"></label>
                         </div>
+                        <div class="form-floating py-2 col-12">
+                            @if (Model.Post.PostImages != null)
+                            {
+                                foreach (var image in Model.Post.PostImages)
+                                {
+                                    <div class="border p-1 m-2 text-center">
+                                        <img src="@image.ImageUrl" height="25%" width="25%"
+                                             style="border-radius:5px; border:1px solid #bbb9b9" />
+                                        <a asp-action="DeleteImage" class="btn btn-danger" asp-route-imageId="@image.Id">
+                                            <i class="bi bi-trash-fill"></i>Delete
+                                        </a>
+                                    </div>
+                                }
+                            }
+                        </div>
                         <div class="row pt-2">
                             <div class="col-6 col-md-3">
                                 @if (Model.Post.Id != 0)
@@ -58,7 +73,7 @@
                 </div>
                 <div class="col-2">
                     @* <img src="~/@Model.Post.ImageUrl" width="100%" style="border-radius:5px; border:1px solid #bbb9b9" />*@
-                    @if (Model.Post.PostImages != null)
+                    @*@if (Model.Post.PostImages != null)
                     {
                         foreach (var image in Model.Post.PostImages)
                         {
@@ -70,7 +85,7 @@
                                 </a>
                             </div>
                         }
-                    }
+                    }*@
                 </div>
             </div>
         </form>

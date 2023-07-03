@@ -28,11 +28,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\JolConstruction.DataAccess\JolConstruction.DataAccess.csproj" />
+    <ProjectReference Include="..\JolConstruction.Utility\JolConstruction.Utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Areas\Identity\Data\" />
-    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
 </Project>

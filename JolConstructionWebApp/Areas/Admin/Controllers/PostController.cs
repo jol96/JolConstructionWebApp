@@ -1,13 +1,17 @@
 ﻿using JolConstruction.DataAccess.Repository.IRepository;
 using JolConstruction.Models;
 using JolConstruction.Models.ViewModels;
+using JolConstruction.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Data;
 using System.Net.Http.Headers;
 
 namespace JolConstructionWebApp.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class PostController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

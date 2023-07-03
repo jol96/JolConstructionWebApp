@@ -1,8 +1,8 @@
 ﻿@model IEnumerable<Post>
-@section Styles {
+@*@section Styles {
     <link href="@Url.Content("~/css/customerLayout.css")" rel="stylesheet" type="text/css" />
 }
-
+*@
 @{
     var servicesPosts = Model.Where
         (p => p.Category.Name != null && string.Equals(p.Category.Name, "Services", StringComparison.OrdinalIgnoreCase));
@@ -14,22 +14,30 @@
             @*<a asp-controller="Services" asp-action="Index" asp-route-filterServices="All" class="btn btn-sm btn-light mx-0">
                 All
             </a>*@
-            <a href="@Url.Action("Index", "Services", new { filterServices = "All"})" class="btn btn-sm btn-light service-button mx-1 mt-1">
+
+           @* @foreach(var service in servicesPosts)
+            {
+                <a href="@Url.Action("Index", "Services", new { filterServices = service.Title})" class="btn btn-sm btn-dark service-button mx-1 mt-1">
+                    @service.Title
+                </a>
+            }*@
+
+            <a href="@Url.Action("Index", "Services", new { filterServices = "All"})" class="btn btn-sm btn-dark service-button mx-1 mt-1">
                 All
             </a>
-            <a href="@Url.Action("Index", "Services", new { filterServices = "Roofing"})" class="btn btn-sm btn-light service-button mx-1 mt-1" onclick="btnClick()">
+            <a href="@Url.Action("Index", "Services", new { filterServices = "Roofing"})" class="btn btn-sm btn-dark service-button mx-1 mt-1" onclick="btnClick()">
                 Roofing
             </a>
-            <a href="@Url.Action("Index", "Services", new { filterServices = "Timber Framing"})" class="btn btn-sm btn-light service-button mx-1 mt-1">
+            <a href="@Url.Action("Index", "Services", new { filterServices = "Timber Framing"})" class="btn btn-sm btn-dark service-button mx-1 mt-1">
                 Timber Framing
             </a>
-            <a href="@Url.Action("Index", "Services", new { filterServices = "Extensions"})" class="btn btn-sm btn-light service-button mx-1 mt-1">
+            <a href="@Url.Action("Index", "Services", new { filterServices = "Extensions"})" class="btn btn-sm btn-dark service-button mx-1 mt-1">
                 Extensions
             </a>
-            <a href="@Url.Action("Index", "Services", new { filterServices = "Garden Room"})" class="btn btn-sm btn-light service-button mx-1 mt-1">
+            <a href="@Url.Action("Index", "Services", new { filterServices = "Garden Room"})" class="btn btn-sm btn-dark service-button mx-1 mt-1">
                 Garden Room
             </a>
-            <a href="@Url.Action("Index", "Services", new { filterServices = "Patio"})" class="btn btn-sm btn-light service-button mx-1 mt-1">
+            <a href="@Url.Action("Index", "Services", new { filterServices = "Patio"})" class="btn btn-sm btn-dark service-button mx-1 mt-1">
                 Patio
             </a>
         </div>

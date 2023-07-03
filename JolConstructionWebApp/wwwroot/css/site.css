@@ -55,6 +55,15 @@ html {
     min-height: 100%;
 }
 
+footer {
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
 
 
 .badge {
@@ -545,3 +554,115 @@ bg-success {
         background-color: #578553;
         border-color: #578553;
     }
+
+/* ------------------------- Start - Index Page Cover photo ---------------------*/
+.background-image {
+    width: 100%; /* or any desired width */
+    height: 500px; /* or any desired height */
+    background-position: center center;
+    background-size: cover; /* or contain */
+    resize: both;
+}
+
+@media (max-width: 1199px) {
+    .background-image {
+        height: 450px
+    }
+}
+
+@media (max-width: 991px) {
+    .background-image {
+        height: 400px
+    }
+}
+
+@media (max-width: 715px) {
+    .background-image {
+        height: 350px
+    }
+}
+
+@media (max-width: 550px) {
+    .background-image {
+        height: 300px
+    }
+}
+/* ------------------------- End - Index Page Cover photo ---------------------*/
+
+/* ------------------------- Start - Index Page Cover photo overlay details ---------------------*/
+.logo {
+    width: 35%;
+    height: auto;
+}
+
+h1 {
+    color: antiquewhite;
+    font-family: 'Trirong', serif;
+    font-size: 3.2vw;
+    font-weight: 400;
+}
+
+
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-title {
+    margin-top: 5vh;
+    margin-top: 5vh;
+    border-radius: 10px;
+    background-color: rgb(47, 98, 183);
+    opacity: 0.90;
+    resize: both;
+    border: solid;
+    border-color: rgb(47, 98, 183);
+}
+
+
+.fa-envelope, .fa-phone-square, .bi-geo-alt-fill {
+    color: antiquewhite;
+    font-size: 18px;
+}
+
+.contact-info {
+    color: antiquewhite;
+    font-weight: 100;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+@media (max-width: 580px) {
+    h1 {
+        font-size: 4.2vw;
+    }
+
+    .contact-info {
+        font-size: 14px;
+    }
+}
+
+
+/* ------------------------- End - Index Page Cover photo overlay details ---------------------*/
+
+/* ------------------------- Start - Services buttons ---------------------*/
+.service-button {
+    background-color: rgb(47, 98, 183);
+    opacity: 0.90;
+}
+
+.service-button.active {
+    border: thin;
+    border-color: antiquewhite;
+}
+/* ------------------------- End - Services buttons ---------------------*/
+
+
+.footer-text{
+    font-size: 12px;
+}

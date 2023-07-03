@@ -1,10 +1,14 @@
 ﻿using JolConstruction.DataAccess.Repository.IRepository;
 using JolConstruction.Models;
+using JolConstruction.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 
 namespace JolConstructionWebApp.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

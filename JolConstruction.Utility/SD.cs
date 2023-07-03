@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace JolConstruction.Utility
 {
-    internal class SD
+    public static class SD
     {
+        public const string Role_User = "User";
+        public const string Role_Admin = "Admin";
     }
 }
