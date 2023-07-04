@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\JolConstruction.Models\JolConstruction.Models.csproj" />
+    <ProjectReference Include="..\JolConstruction.Utility\JolConstruction.Utility.csproj" />
   </ItemGroup>
 
 </Project>
