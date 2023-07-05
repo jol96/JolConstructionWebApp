@@ -22,22 +22,15 @@ namespace JolConstruction.Data
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Category>().HasData(
-                new Category { Id = 1, Name = "Cover Photo", DisplayOrder = 1},
-                new Category { Id = 2, Name = "Home Page Project", DisplayOrder = 2 });
+                new Category { Id = 1, Name = "New Build", DisplayOrder = 1});
 
             modelBuilder.Entity<Post>().HasData(
-                new Post { 
-                    Id = 1, 
-                    Title = "Cover Photo", 
-                    Description = "Cover Photo",
-                    CategoryId = 1
-                },
                 new Post
                 {
-                    Id = 2,
+                    Id = 1,
                     Title = "New Build",
                     Description = "A new build project completed in 2022",
-                    CategoryId = 2
+                    CategoryId = 1
                 });
         }
     }
