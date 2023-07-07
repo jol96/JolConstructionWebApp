@@ -34,7 +34,6 @@ namespace JolConstruction.DataAccess
             }
             catch (Exception ex) { }
 
-            var t = !_roleManager.RoleExistsAsync(SD.Role_User).GetAwaiter().GetResult();
 
             //create roles if they are not created
             if (!_roleManager.RoleExistsAsync(SD.Role_User).GetAwaiter().GetResult())

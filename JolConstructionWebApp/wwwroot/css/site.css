@@ -555,6 +555,11 @@ bg-success {
         border-color: #578553;
     }
 
+/* carousel */
+.carousel-item {
+    transition-duration: 0.35s; 
+}
+
 /* ------------------------- Start - Index Page Cover photo ---------------------*/
 .background-image {
     width: 100%; /* or any desired width */
