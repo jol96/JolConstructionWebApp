@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="favicon.ico">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Construction company located in Buncrana, Co Donegal,
@@ -8,7 +9,6 @@
                                     New Builds, Renovations, Conservation work and more.
                                     Contact +353 868554799 or email johnsoloughlin@gmail.com for further details.">
     <title>@ViewData["Title"] - John O'Loughlin Construction</title>
-    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -52,63 +52,13 @@
     <div>
         <main role="main" class="pb-3">
             <partial name="_Notification" />
-            <div class="background-image" style="background-image: url('/images/coverPhoto.jpg');">
-                <div class="container-fluid center-screen">
-                    <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 col-10 pt-2 pb-2 mt-3 m-3 site-title ">
-                        <div class="pb-1 pt-1">
-                            <img src="/images/logo-removebg-preview.png" class="img-fluid logo" />
-                        </div>
-                        <div class="pb-1 pt-1">
-                            <h1>JOHN O'LOUGHLIN CONSTRUCTION</h1>
-                        </div>
-                        <div class="pb-1 pt-1">
-                            <i class="fa fa-envelope" aria-hidden="true">
-                                <span class="contact-info">
-                                    johnsoloughlin@gmail.com
-                                </span>
-                            </i>
-                        </div>
-                        <div class="pb-1 pt-1">
-                            <i class="fa fa-phone-square" aria-hidden="true">
-                                <span class="contact-info">
-                                    +(353) 86 855 4799
-                                </span>
-                            </i>
-                        </div>
-                        <div class="pb-1 pt-1">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            <span class="contact-info">
-                                Buncrana, Co. Donegal
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container pb-1 pt-1 mb-2 mt-2">
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="d-flex flex-wrap col-12 btn-group mt-4" role="group">
-                        <a href="@Url.Action("Index", "Home")" class="btn btn-lg btn-light mx-1" onclick="btnClick()">
-                            <i class="bi bi-house-check"></i>
-                            Projects
-                        </a>
-                        <a href="@Url.Action("Index", "Services")" class="btn btn-lg btn-light mx-1" onclick="btnClick()">
-                            <i class="bi bi-hammer"></i>
-                            Services
-                        </a>
-                        @*<a href="@Url.Action("Index", "Contact")" class="btn btn-lg btn-light mx-1" data-target="contact" onclick="btnClick()">
-                        <i class="bi bi-telephone"></i> Contact
-                        </a>*@
-                    </div>
-                </div>
-            </div>
             @RenderBody()
-            @RenderSection("Styles", false)
         </main>
     </div>
 
     <footer class="border-top pt-1 pb-1 footer text-muted bg-light">
         <div class="text-center">
-            <span class="footer-text">&copy; 2023 John O'Loughlin Construction Ltd. All rights reserved</span>
+            <span class="footer-text">&copy; 2023 John O'Loughlin Construction Ltd. All rights reserved.</span>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

@@ -1,26 +1,14 @@
 ﻿@model IEnumerable<Post>
-@*@section Styles {
-    <link href="@Url.Content("~/css/customerLayout.css")" rel="stylesheet" type="text/css" />
-}
-*@
+
 @{
     var servicesPosts = Model.Where
         (p => p.Category.Name != null && string.Equals(p.Category.Name, "Services", StringComparison.OrdinalIgnoreCase));
 }
 
+@Html.Partial("_SharedBanner")
 <div class="container pb-1 pt-1 mb-2 mt-2">
     <div class="d-flex justify-content-center align-items-center">
         <div class="d-flex flex-wrap col-12 btn-group mt-4" role="group">
-            @*<a asp-controller="Services" asp-action="Index" asp-route-filterServices="All" class="btn btn-sm btn-light mx-0">
-                All
-            </a>*@
-
-           @* @foreach(var service in servicesPosts)
-            {
-                <a href="@Url.Action("Index", "Services", new { filterServices = service.Title})" class="btn btn-sm btn-dark service-button mx-1 mt-1">
-                    @service.Title
-                </a>
-            }*@
 
             <a href="@Url.Action("Index", "Services", new { filterServices = "All"})" class="btn btn-sm btn-dark service-button mx-1 mt-1">
                 All

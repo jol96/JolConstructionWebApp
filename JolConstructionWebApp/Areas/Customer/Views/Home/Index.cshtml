@@ -1,13 +1,11 @@
 ﻿@model IEnumerable<Post>
-@*@section Styles {
-    <link href="@Url.Content("~/css/customerLayout.css")" rel="stylesheet" type="text/css" />
-}*@
 
 @{
     var projectsPosts = Model.Where
         (p => p.Category.Name != null && string.Equals(p.Category.Name, "Project", StringComparison.OrdinalIgnoreCase));
 }
 
+@Html.Partial("_SharedBanner")
 <div class="container pb-5 pt-1 mb-2 mt-2">
     <div class="row justify-content-center">
         @foreach (var post in projectsPosts)
