@@ -40,19 +40,20 @@
                                         @foreach (var imageWithIndex in
                                        post.PostImages.Select((image, index) => new { PostImage = image, Index = index }))
                                         {
-                                            <div class="@(imageWithIndex.Index==0?"carousel-item active":"carousel-item")">
-                                                <img src="@imageWithIndex.PostImage.ImageUrl" class="d-block w-100" alt="...">
+                                            <div class="@(imageWithIndex.Index==0?"carousel-item active":"carousel-item")" style="background-color: black">
+                                                <div class="position-relative">
+                                                    <img src="@imageWithIndex.PostImage.ImageUrl" class="d-block w-100 h-100" alt="...">
+                                                    <div class="image-count-icon rounded-circle">
+                                                        <p class="image-count-text">@(imageWithIndex.Index + 1) / @post.PostImages.Count()</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         }
 
                                     </div>
                                     <button class="carousel-control-prev" type="button" data-bs-target="#@postTitle" data-bs-slide="prev">
-                                        @*<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>*@
                                     </button>
                                     <button class="carousel-control-next" type="button" data-bs-target="#@postTitle" data-bs-slide="next">
-                                        @*<span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>*@
                                     </button>
                                 </div>
                             }

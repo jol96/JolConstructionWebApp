@@ -671,3 +671,20 @@ h1 {
 .footer-text{
     font-size: 12px;
 }
+
+.image-count-icon {
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    transform: translate(-50%, -150%);
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 12%;
+}
+
+.image-count-text {
+    padding-top: 13px;
+    padding-bottom: -10px;
+    font-size: 10px;
+    color: white;
+}
