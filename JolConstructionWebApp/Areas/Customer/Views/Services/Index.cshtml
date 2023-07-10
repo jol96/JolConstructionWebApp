@@ -41,7 +41,22 @@
                     <div class="row p-2">
                         <div class="col-12 p-1">
                             <div class="card border-0">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#servicesModal">
+                                    <img src="@image.ImageUrl" class="d-block w-100" />
+                                </a>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="servicesModal" tabindex="-1" aria-labelledby="servicesModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
                                 <img src="@image.ImageUrl" class="d-block w-100" />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
