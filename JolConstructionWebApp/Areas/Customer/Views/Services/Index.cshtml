@@ -8,24 +8,24 @@
 @Html.Partial("_SharedBanner")
 <div class="container pb-1 pt-1 mb-2 mt-2">
     <div class="d-flex justify-content-center align-items-center">
-        <div class="d-flex flex-wrap col-12 btn-group mt-4" role="group">
+        <div class="d-flex flex-wrap col-12 btn-group rounded-2 mt-4" role="group">
 
-            <a href="@Url.Action("Index", "Services", new { filterServices = "All"})" class="btn btn-sm btn-dark service-button mx-1 mt-1">
+            <a href="@Url.Action("Index", "Services", new { filterServices = "All"})" class="btn btn-sm btn-dark service-button rounded-1 mx-1 mt-1">
                 All
             </a>
-            <a href="@Url.Action("Index", "Services", new { filterServices = "Roofing"})" class="btn btn-sm btn-dark service-button mx-1 mt-1" onclick="btnClick()">
+            <a href="@Url.Action("Index", "Services", new { filterServices = "Roofing"})" class="btn btn-sm btn-dark service-button rounded-1 mx-1 mt-1" onclick="btnClick()">
                 Roofing
             </a>
-            <a href="@Url.Action("Index", "Services", new { filterServices = "Timber Framing"})" class="btn btn-sm btn-dark service-button mx-1 mt-1">
+            <a href="@Url.Action("Index", "Services", new { filterServices = "Timber Framing"})" class="btn btn-sm btn-dark service-button rounded-1 mx-1 mt-1">
                 Timber Framing
             </a>
-            <a href="@Url.Action("Index", "Services", new { filterServices = "Extensions"})" class="btn btn-sm btn-dark service-button mx-1 mt-1">
+            <a href="@Url.Action("Index", "Services", new { filterServices = "Extensions"})" class="btn btn-sm btn-dark service-button rounded-1 mx-1 mt-1">
                 Extensions
             </a>
-            <a href="@Url.Action("Index", "Services", new { filterServices = "Garden Room"})" class="btn btn-sm btn-dark service-button mx-1 mt-1">
+            <a href="@Url.Action("Index", "Services", new { filterServices = "Garden Room"})" class="btn btn-sm btn-dark service-button rounded-1 mx-1 mt-1">
                 Garden Room
             </a>
-            <a href="@Url.Action("Index", "Services", new { filterServices = "Patio"})" class="btn btn-sm btn-dark service-button mx-1 mt-1">
+            <a href="@Url.Action("Index", "Services", new { filterServices = "Patio"})" class="btn btn-sm btn-dark service-button rounded-1 mx-1 mt-1">
                 Patio
             </a>
         </div>
